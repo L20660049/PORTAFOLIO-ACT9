@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronómetro</title>
+  <style>
+    /* Estilos generales del cuerpo */
+    body {
+      font-family: 'Arial', sans-serif; /* Tipografía del texto */
+      background-color: #f0f0f0; /* Color de fondo */
+      color: #333; /* Color del texto */
+      text-align: center; /* Alinear texto al centro */
+      margin-top: 50px; /* Margen superior */
+    }
+
+    /* Estilo del cronómetro */
+    .timer {
+      font-size: 48px; /* Tamaño de fuente del cronómetro */
+      margin-bottom: 20px; /* Margen inferior */
+      background-color: #fff; /* Fondo blanco */
+      border: 2px solid #007bff; /* Borde azul */
+      border-radius: 10px; /* Esquinas redondeadas */
+      padding: 20px; /* Espaciado interno */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    }
+
+    /* Estilo de los botones */
+    button {
+      margin: 5px; /* Margen de los botones */
+      padding: 10px 20px; /* Espaciado interno */
+      font-size: 18px; /* Tamaño de fuente */
+      color: white; /* Color del texto */
+      background-color: #007bff; /* Color de fondo */
+      border: none; /* Sin borde */
+      border-radius: 5px; /* Esquinas redondeadas */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    }
+
+    /* Efecto al pasar el cursor sobre el botón */
+    button:hover {
+      background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor del cronómetro -->
+  <div class="timer" id="timer">00:00:00</div>
+
+  <!-- Botones para controlar el cronómetro -->
+  <button id="start">Iniciar</button>
+  <button id="pause">Pausar</button>
+  <button id="reset">Reiniciar</button>
+
+  <!-- Enlace al script del cronómetro -->
+  <script src="cronometro.js"></script>
+</body>
+</html>
+
